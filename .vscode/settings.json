@@ -1,0 +1,7 @@
+{
+    "python.linting.pylintEnabled": true,
+    "git.ignoreLimitWarning": true,
+    "python.defaultInterpreterPath": "/Users/lamhai/python/py-hd-ex/.venv/bin/python3",
+    "python.envFile": "${workspaceFolder}/.venv",
+    "python.linting.pylintArgs": ["--disable=C0111,C0103,C0301"]
+}
