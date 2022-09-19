@@ -1,4 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/python
+# -*-coding:utf-8 -*
+
 import sys
 
 curr_word = None
@@ -28,3 +30,5 @@ for line in sys.stdin:
 # Output the count for the last word
 if curr_word == word:
     print ('{0}\t{1}'.format(curr_word, curr_count))
+
+# hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming*.jar -Dmapred.reduce.tasks=0 -files mapper.py,reducer.py     -mapper mapper.py     -reducer reducer.py -input /input/input.txt -output ./outputMapReduceFile.txt

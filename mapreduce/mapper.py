@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/python
+# -*-coding:utf-8 -*
 
 import sys
 
@@ -16,6 +17,6 @@ for line in sys.stdin:
         # anything after the first tab character.
         print ('{0}\t{1}'.format(word, 1))
 
-# hadoop jar $HADOOP_HOME/libexec/share/hadoop/tools/lib/hadoop-streaming*.jar     -files mapper.py,reducer.py     -mapper mapper.py     -reducer reducer.py     -input /input  -output ./output
+# hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming*.jar -Dmapred.reduce.tasks=0 -file mapper.py -file reducer.py -reducer reducer.py -input /input/input.txt -output o.txt
 
 # export HADOOP_HDFS_HOME=$HADOOP_HOME
