@@ -20,3 +20,5 @@ for line in sys.stdin:
 # hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming*.jar -Dmapred.reduce.tasks=0 -file mapper.py -file reducer.py -reducer reducer.py -input /input/input.txt -output o.txt
 
 # export HADOOP_HDFS_HOME=$HADOOP_HOME
+
+# https://linuxhint.com/install-apache-hadoop-ubuntu/
